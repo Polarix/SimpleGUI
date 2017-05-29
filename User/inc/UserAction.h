@@ -26,6 +26,6 @@
 #define KEY_VALUE_ENTER_PAD				(0x0172)
 
 void USR_ACT_OnInitialize(void);
-void USR_ACT_OnKeyPress(uint16_t uiKeyCode);
+void USR_ACT_OnKeyPress(bool bShift, bool bCtrl, bool bAlt, uint16_t uiKeyCode);
 
 #endif // __INCLUDE_USERACTION_H__

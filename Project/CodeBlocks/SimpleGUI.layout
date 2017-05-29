@@ -2,39 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="..\..\GUI\src\GUI_List.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Frame\src\LCD_OperationIF.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="25021" topLine="571" />
+			<Cursor1 position="1250" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="..\..\GUI\inc\GUI_ScrollBar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Frame\src\LCD_VirtualDevice.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="384" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\..\User\src\UserAction.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4733" topLine="76" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\src\GUI_Common.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1043" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\inc\GUI_VariableBox.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1122" topLine="36" />
-		</Cursor>
-	</File>
-	<File name="..\..\Frame\src\LCD_VirtualDevice.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10163" topLine="273" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\src\GUI_Basic.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="18982" topLine="387" />
+			<Cursor1 position="1051" topLine="13" />
 		</Cursor>
 	</File>
 	<File name="..\..\GUI\inc\Font_H12.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -42,19 +17,9 @@
 			<Cursor1 position="2212" topLine="39" />
 		</Cursor>
 	</File>
-	<File name="..\..\GUI\src\GUI_Notice.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\GUI\inc\GUI_ScrollBar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="700" topLine="72" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\inc\GUI_List.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="524" topLine="33" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\src\GUI_Text.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="12" />
+			<Cursor1 position="384" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="..\..\GUI\inc\GUI_Notice.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -62,14 +27,9 @@
 			<Cursor1 position="1699" topLine="6" />
 		</Cursor>
 	</File>
-	<File name="..\..\GUI\src\GUI_VariableBox.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\GUI\src\GUI_Text.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10679" topLine="272" />
-		</Cursor>
-	</File>
-	<File name="..\..\GUI\inc\GUI_Basic.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1583" topLine="20" />
+			<Cursor1 position="0" topLine="12" />
 		</Cursor>
 	</File>
 	<File name="..\..\GUI\inc\GUI_Text.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -77,14 +37,59 @@
 			<Cursor1 position="0" topLine="7" />
 		</Cursor>
 	</File>
-	<File name="..\..\Frame\inc\LCD_VirtualDeviceParameter.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\GUI\inc\GUI_VariableBox.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="276" topLine="0" />
+			<Cursor1 position="1821" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\..\Frame\inc\LCD_VirtualDevice.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\GUI\src\GUI_Common.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4164" topLine="83" />
+			<Cursor1 position="1043" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="..\..\User\src\UserAction.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5571" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\src\GUI_Notice.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="700" topLine="72" />
+		</Cursor>
+	</File>
+	<File name="..\..\User\inc\UserAction.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="971" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\src\GUI_Basic.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18982" topLine="387" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\src\GUI_List.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19350" topLine="379" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\inc\GUI_Basic.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1583" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\src\GUI_VariableBox.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10679" topLine="272" />
+		</Cursor>
+	</File>
+	<File name="..\..\GUI\inc\GUI_List.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="524" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="..\..\Frame\inc\LCD_OperationIF.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="997" topLine="11" />
 		</Cursor>
 	</File>
 	<File name="..\..\Frame\src\LCD_Application.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -92,14 +97,14 @@
 			<Cursor1 position="377" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\..\Frame\src\LCD_OperationIF.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Frame\inc\LCD_VirtualDevice.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1714" topLine="30" />
+			<Cursor1 position="4164" topLine="83" />
 		</Cursor>
 	</File>
-	<File name="..\..\User\inc\UserAction.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Frame\inc\LCD_VirtualDeviceParameter.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="916" topLine="0" />
+			<Cursor1 position="276" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

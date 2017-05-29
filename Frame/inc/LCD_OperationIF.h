@@ -36,7 +36,7 @@ typedef struct
 extern TPixArray			g_LCDPixArray;
 
 // Interface function declare
-void		VTIF_KeyBoardEvent(uint16_t uikeyValue);
+void		VTIF_KeyBoardEvent(bool bShift, bool bCtrl, bool bAlt, uint16_t uiKeyCode);
 void		VTIF_LCDInitializeDisplay(void);
 void		VTIF_SetPoint(uint16_t uiPosX, uint16_t uiPosY, uint8_t uiPixValue);
 uint8_t		VTIF_GetPoint(uint16_t uiPosX, uint16_t uiPosY);

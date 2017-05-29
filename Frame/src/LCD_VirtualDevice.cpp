@@ -30,10 +30,6 @@ LCD_DisplayPanel::~LCD_DisplayPanel()
 
 void LCD_DisplayPanel::wxEvent_OnKeyDown(wxKeyEvent& event)
 {
-	uint16_t	uiKeyCode;
-    uiKeyCode = (uint16_t)event.GetKeyCode();
-
-	wxMessageBox(wxString::Format("Keycode = 0x%04X.", uiKeyCode));
 	event.ResumePropagation(1);
 	event.Skip();
 }
@@ -181,13 +177,13 @@ LCD_VirtualDevice::LCD_VirtualDevice(wxWindow* parent, wxWindowID id, const wxSt
 																wxBitmap(_T("ID_TOOL_SCREENSHOTS")),
 																wxBitmap(_T("ID_TOOL_SCREENSHOTS")),
 																wxITEM_NORMAL,
-																_T("Screenshots(Ctrl+S)"),
+																_T("Screenshots"),
 																_T("Save LCD screenshots to file."));
 	m_CtrlToolButton_ScreenCpoy		= m_CtrlToolBar->AddTool(	wxID_TOOLBAR_COPY, _T("Copy LCD screen"),
 																wxBitmap(_T("ID_TOOL_COPY")),
 																wxBitmap(_T("ID_TOOL_COPY")),
 																wxITEM_NORMAL,
-																_T("Copy(Ctrl+C)"),
+																_T("Copy"),
 																_T("Copy current LCD Screen image to clipboard."));
 	m_CtrlToolButton_OpenFolder		= m_CtrlToolBar->AddTool(	wxID_TOOLBAR_SCREENSHOTS_FOLDER, _T("Open folder"),
 																wxBitmap(_T("ID_TOOL_OPENFOLDER")),
@@ -231,31 +227,8 @@ void LCD_VirtualDevice::OnKeyDown(wxKeyEvent& event)
     uint16_t	uiKeyCode;
     uiKeyCode = (uint16_t)event.GetKeyCode();
 
-    if(event.m_controlDown == true) // Ctrl key.
-	{
-		switch(uiKeyCode)
-		{
-			case 'C':
-			{
-				Copy();
-				break;
-			}
-			case 'S':
-			{
-				Screenshots();
-				break;
-			}
-			default:
-			{
-				// UnKnow hot key.
-			}
-		}
-	}
-	else
-	{
-		VTIF_KeyBoardEvent(uiKeyCode);
-		m_CtrlPaintPanel->PartialPaint();
-	}
+	VTIF_KeyBoardEvent(event.ShiftDown(), event.ControlDown(), event.AltDown(), uiKeyCode);
+	m_CtrlPaintPanel->PartialPaint();
 }
 
 void LCD_VirtualDevice::Copy(void)

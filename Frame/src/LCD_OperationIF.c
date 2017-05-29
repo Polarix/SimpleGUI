@@ -31,9 +31,9 @@ static void VTIF_UpdateChangedArea(uint16_t uiPosX, uint16_t uiPosY);
 //=======================================================================//
 //= Function implementation.										    =//
 //=======================================================================//
-void VTIF_KeyBoardEvent(uint16_t uikeyValue)
+void VTIF_KeyBoardEvent(bool bShift, bool bCtrl, bool bAlt, uint16_t uiKeyCode)
 {
-	USR_ACT_OnKeyPress(uikeyValue);
+	USR_ACT_OnKeyPress(bShift, bCtrl, bAlt, uiKeyCode);
 }
 
 void VTIF_LCDInitializeDisplay(void)

@@ -408,6 +408,23 @@ void GUI_List_DrawItem(GUI_LIST_STRUCT* pstList, size_t uiIndex)
 			stItemTextDisplayArea.Width = LIST_ITEM_PARAMETER_AREA_WIDTH;
 			if(LIST_ITEM_NORMAL != pstListItemPointer->Type)
 			{
+				if(pstListItemPointer->Valid.Value > pstListItemPointer->Valid.Max)
+				{
+					pstListItemPointer->Valid.Value = pstListItemPointer->Valid.Max;
+				}
+				else if(pstListItemPointer->Valid.Value < pstListItemPointer->Valid.Min)
+				{
+					pstListItemPointer->Valid.Value = pstListItemPointer->Valid.Min;
+				}
+				if(pstListItemPointer->Decimal.Value > pstListItemPointer->Decimal.Max)
+				{
+					pstListItemPointer->Decimal.Value = pstListItemPointer->Decimal.Max;
+				}
+				else if(pstListItemPointer->Decimal.Value < pstListItemPointer->Decimal.Min)
+				{
+					pstListItemPointer->Decimal.Value = pstListItemPointer->Decimal.Min;
+				}
+
 				switch(pstListItemPointer->Type)
 				{
 					case LIST_ITEM_ENUM:
@@ -423,14 +440,7 @@ void GUI_List_DrawItem(GUI_LIST_STRUCT* pstList, size_t uiIndex)
 					}
 					case LIST_ITEM_DIGIT:
 					{
-						if(pstListItemPointer->Decimal.Value > 0)
-						{
-							GUI_Common_IntegerToStringWithDecimalPoint(pstListItemPointer->Valid.Value, pstListItemPointer->Decimal.Value, szParameterStringBuffer, 0, ' ');
-						}
-						else
-						{
-							GUI_Common_IntegerToString(pstListItemPointer->Valid.Value, szParameterStringBuffer, 10, 0, ' ');
-						}
+						GUI_Common_IntegerToStringWithDecimalPoint(pstListItemPointer->Valid.Value, pstListItemPointer->Decimal.Value, szParameterStringBuffer, 0, ' ');
 						uiParameterTextWidth = GUI_Text_GetTextGraphicsWidth(szParameterStringBuffer,LIST_FONT_SIZE);
 						if(uiParameterTextWidth < LIST_ITEM_PARAMETER_AREA_WIDTH)
 						{

@@ -1,0 +1,7 @@
+ID_ICON_MAIN				ICON			"Icons\\ICON_Main.ico"
+ID_ICON_FRAME				BITMAP			"Icons\\ICON_Frame.bmp"
+ID_TOOL_SCREENSHOTS			BITMAP			"Tools\\Screenshots.bmp"
+ID_TOOL_COPY				BITMAP			"Tools\\Copy.bmp"
+ID_TOOL_OPENFOLDER			BITMAP			"Tools\\OpenFolder.bmp"
+ID_TOOL_ABOUT				BITMAP			"Tools\\About.bmp"
+ID_TOOL_EXIT				BITMAP			"Tools\\Exit.bmp"

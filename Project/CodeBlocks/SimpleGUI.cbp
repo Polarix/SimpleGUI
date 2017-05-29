@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimpleGUI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Output/bin/Debug/SimpleGUI" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../Output/obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="$(#wx31)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx31)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx31)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../Output/bin/Release/SimpleGUI" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../Output/obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx31)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx31)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx31)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DGB2312_ENCV" />
+			<Add option="-D__SIMULATOR__" />
+			<Add directory="$(#wx31)/include" />
+			<Add directory="../../Frame/inc" />
+			<Add directory="../../User/inc" />
+			<Add directory="../../GUI/inc" />
+			<Add directory="../../Library/inc" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx31)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="../../Library/lib/libiconv.a" />
+		</Linker>
+		<Unit filename="../../Frame/inc/LCD_Application.h" />
+		<Unit filename="../../Frame/inc/LCD_OperationIF.h" />
+		<Unit filename="../../Frame/inc/LCD_VirtualDevice.h" />
+		<Unit filename="../../Frame/inc/LCD_VirtualDeviceParameter.h" />
+		<Unit filename="../../Frame/src/LCD_Application.cpp" />
+		<Unit filename="../../Frame/src/LCD_OperationIF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Frame/src/LCD_VirtualDevice.cpp" />
+		<Unit filename="../../GUI/inc/Font_H12.h" />
+		<Unit filename="../../GUI/inc/Font_H16.h" />
+		<Unit filename="../../GUI/inc/Font_H32.h" />
+		<Unit filename="../../GUI/inc/Font_H8.h" />
+		<Unit filename="../../GUI/inc/GUI_Basic.h" />
+		<Unit filename="../../GUI/inc/GUI_Common.h" />
+		<Unit filename="../../GUI/inc/GUI_Frame.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../GUI/inc/GUI_List.h" />
+		<Unit filename="../../GUI/inc/GUI_Notice.h" />
+		<Unit filename="../../GUI/inc/GUI_ProcessBar.h" />
+		<Unit filename="../../GUI/inc/GUI_ScrollBar.h" />
+		<Unit filename="../../GUI/inc/GUI_Text.h" />
+		<Unit filename="../../GUI/inc/GUI_VariableBox.h" />
+		<Unit filename="../../GUI/src/GUI_Basic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_Common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_Frame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_Notice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_ProcessBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_ScrollBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_Text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../GUI/src/GUI_VariableBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Resource/Resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../../User/inc/UserAction.h" />
+		<Unit filename="../../User/src/UserAction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
